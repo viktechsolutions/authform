@@ -4,7 +4,7 @@ import './LoginBasic.scss';
 import Popup from '../Popup/Popup';
 import submitHdl from '../../Features/submitHandler';
 
-const LoginBasic = (props) => {
+const LoginBasic = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [emailDirty, setEmailDirty] = useState(false);
@@ -117,7 +117,7 @@ const LoginBasic = (props) => {
         </button>
         <div className="register loginBasic__register">
           <span>Don't have an account?</span>
-          <a href="*">Register</a>
+          <a href="/">Register</a>
         </div>
       </form>
       {popup && <Popup

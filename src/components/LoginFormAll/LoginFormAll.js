@@ -6,7 +6,7 @@ import LoginBasic from '../LoginBasic/LoginBasic';
 import LoginCustomHook from '../LoginCustomHook/LoginCustomHook';
 import LoginHookForm from '../LoginHookForm/LoginHookForm';
 
-const LoginFormAll = (props) => {
+const LoginFormAll = () => {
   const [loginBasic, setLoginBasic] = useState(false);
   const [loginCustomHook, setLoginCustomHook] = useState(false);
   const [loginHookForm, setLoginHookForm] = useState(false);

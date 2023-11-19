@@ -5,7 +5,7 @@ import useInput from '../../CustomHooks/UseHooks/useInput';
 import Popup from '../Popup/Popup';
 import submitHdl from '../../Features/submitHandler';
 
-const LoginCustomHook = (props) => {
+const LoginCustomHook = () => {
   const email = useInput('', { isEmpty: true, emailError: true });
   const password = useInput('', { isEmpty: true, passwordError: true });
   const [inputType, setInputType] = useState('password');
@@ -88,7 +88,7 @@ const LoginCustomHook = (props) => {
         </button>
         <div className="register loginBasic__register">
           <span>Don't have an account?</span>
-          <a href="*">Register</a>
+          <a href="/">Register</a>
         </div>
       </form>
       {popup && <Popup

@@ -3,9 +3,8 @@ import { useForm } from 'react-hook-form';
 import { useState } from 'react';
 
 import Popup from '../Popup/Popup';
-import submitHdl from '../../Features/submitHandler';
 
-const LoginHookForm = (props) => {
+const LoginHookForm = ( => {
   const {
     register,
     formState: { errors, isValid },
@@ -94,7 +93,7 @@ const LoginHookForm = (props) => {
         </button>
         <div className="register loginBasic__register">
           <span>Don't have an account?</span>
-          <a href="*">Register</a>
+          <a href="/">Register</a>
         </div>
       </form>
       {popup && <Popup
