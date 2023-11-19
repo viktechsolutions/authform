@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 import Popup from '../Popup/Popup';
 
-const LoginHookForm = ( => {
+const LoginHookForm = () => {
   const {
     register,
     formState: { errors, isValid },
