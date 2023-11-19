@@ -8,7 +8,6 @@ const useInput = (initialValue, validations) => {
   const emailError = useValidation(value, validations);
   const passwordError = useValidation(value, validations);
   const valid = useValidation(value, validations);
-
   const [error, setError] = useState(false);
 
   const validate = (value) => {
@@ -58,15 +57,7 @@ const useInput = (initialValue, validations) => {
   };
 
   return {
-    value,
-    onChange,
-    onBlur,
-    isDirty,
-    emailError,
-    passwordError,
-    error,
-    ...valid,
-
+    value, onChange, onBlur, isDirty, emailError, passwordError, error, ...valid,
   };
 };
 

@@ -1,5 +1,3 @@
-import './App.scss';
-
 import LoginFormAll from './components/LoginFormAll/LoginFormAll';
 
 function App() {

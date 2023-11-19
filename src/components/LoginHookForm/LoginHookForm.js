@@ -1,7 +1,7 @@
-import './LoginHookForm.scss';
 import { useForm } from 'react-hook-form';
 import { useState } from 'react';
 
+import './LoginHookForm.scss';
 import Popup from '../Popup/Popup';
 
 const LoginHookForm = () => {

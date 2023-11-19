@@ -1,6 +1,6 @@
-import './LoginFormAll.scss';
 import { useState } from 'react';
 
+import './LoginFormAll.scss';
 import Card from '../UI/Card';
 import LoginBasic from '../LoginBasic/LoginBasic';
 import LoginCustomHook from '../LoginCustomHook/LoginCustomHook';

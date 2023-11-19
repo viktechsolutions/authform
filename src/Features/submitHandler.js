@@ -3,7 +3,6 @@ function submitHdl(email, password, setPopup, setPopupError) {
     e.preventDefault();
 
     fetch('https://fakestoreapi.com/users', {
-
       method: 'POST',
       body: JSON.stringify({
         email,

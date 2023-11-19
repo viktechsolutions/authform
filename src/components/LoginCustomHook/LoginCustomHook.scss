@@ -7,45 +7,46 @@
 
   &__register {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
 }
 
 .form {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  position: relative;
-
 }
 
 .error {
+  font-size: .75rem;
+
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
+  padding: 0 0 .25rem .25rem;
   color: #d3cb55;
-  padding: 0 0 0.25rem 0.25rem;
-  font-size: 0.75rem;
-
 }
 
 .button {
   //margin-right: 0.25rem;
-  font-size: 0.75rem;
+  font-size: .75rem;
   border-color: #372411;
 }
 
 .button.submit {
-  background: #04809d;
-  margin: 0 0 0.5rem 0;
   font-size: 1rem;
   font-weight: bold;
+  margin: 0 0 .5rem 0;
+
+  background: #04809d;
 }
 
 .button.submit:disabled {
-  opacity: 0.8;
+  opacity: .8;
 }
 
 .button.submit:hover {
@@ -58,10 +59,10 @@
 }
 
 .input {
-  width: 100%;
   box-sizing: border-box;
-  outline: 0;
+  width: 100%;
   margin-bottom: 0;
+  outline: 0;
 }
 
 .input::placeholder {
@@ -71,13 +72,12 @@
 .icon {
   position: absolute;
   top: 1.1rem;
-  right: 0.5rem;
-  transform: translateY(-50%);
-  color: #a55200;
+  right: .5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  transform: translateY(-50%);
+  color: #a55200;
 }
 
 .input-container {

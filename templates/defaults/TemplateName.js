@@ -1,6 +1,6 @@
 import './TemplateName.scss';
 
-const TemplateName = (props) => {
+const TemplateName = () => {
   return (
     <div className="templateName">
       <h2>TemplateName</h2>

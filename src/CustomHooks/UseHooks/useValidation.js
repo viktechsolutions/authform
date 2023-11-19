@@ -5,9 +5,6 @@ const useValidation = (value, validations) => {
   const [emailError, setEmailError] = useState(false);
   const [passwordError, setPasswordError] = useState(false);
 
-  // const [inputValid, setInputValid] = useState(false);
-  // const [inputError, setInputError] = useState('');
-
   useEffect(() => {
     for (const validation in validations) {
       switch (validation) {

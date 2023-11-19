@@ -4,27 +4,31 @@
 }
 
 body {
+  position: relative;
+
   font-family: -apple-system, BlinkMacSystemFont, "Calibri", "Segoe UI", "Roboto", "Oxygen",
   "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
   sans-serif;
+  color: #fdecdc;
+
+  background: #e5d7c9;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #e5d7c9;
-  color: #fdecdc;
-  position: relative;
 }
 
 button {
   background: #fbd671;
 }
 
-.input, .button {
+.input,
+.button {
+  height: 2rem;
   margin-bottom: 1rem;
   padding: 0 1rem;
+
   border: #a55200 2px solid;
   border-radius: 0.5rem;
-  height: 2rem;
 }
 
 .input {
@@ -32,9 +36,10 @@ button {
 }
 
 .button {
-  max-width: 400px;
   min-width: 7rem;
+  max-width: 400px;
   padding: 0 0.25rem;
+
   cursor: pointer;
 }
 

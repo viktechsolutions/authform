@@ -2,19 +2,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 1rem auto;
-  max-width: 450px;
   min-width: 230px;
+  max-width: 450px;
+  margin: 1rem auto;
 
   &__group {
     display: flex;
-    justify-content: center;
     flex-direction: row;
-    transition: flex-direction 1s ease;
+    justify-content: center;
     padding: 1rem;
+    transition: flex-direction 1s ease;
   }
-
-
 }
 
 .loginFormAll__group_light {
@@ -27,29 +25,28 @@
 
 
 .button.active {
-  background-color: #a57700;
   color: #101010;
+  background-color: #a57700;
 }
 
 .button {
-  background: #fbd671; /* Исправленный цвет фона */
   min-width: 7rem;
-  padding: 0 0.25rem;
+  margin: .25rem auto;
+  padding: 0 .25rem;
   cursor: pointer;
-  margin: 0.25rem auto;
+
+  background: #fbd671; /* Исправленный цвет фона */
 }
 
 @media (max-width: 850px) {
   .group {
     flex-direction: column;
-    animation-name: direction;
-    animation-duration: 0.5s;
     max-width: 450px;
-
+    animation-name: direction;
+    animation-duration: .5s;
   }
   .button {
     max-width: 450px;
-
   }
 }
 
@@ -67,8 +64,7 @@
     flex-direction: column;
   }
   .button {
-
-    margin: 0.25rem;
+    margin: .25rem;
   }
 }
 
