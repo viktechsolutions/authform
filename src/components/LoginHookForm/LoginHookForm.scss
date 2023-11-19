@@ -1,0 +1,92 @@
+.loginHookForm {
+  display: block;
+  width: 100%;
+
+
+  h1 {
+    margin-bottom: 2rem;
+  }
+
+  &__register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .loginHookForm__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+
+  .error {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #d3cb55;
+    padding: 0 0 0.25rem 0.25rem;
+    font-size: 0.75rem;
+
+  }
+
+  .button {
+    margin-right: 0.25rem;
+    font-size: 0.75rem;
+    border-color: #372411;
+  }
+
+  .button.submit {
+    background: #04809d;
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .button.submit:disabled {
+    opacity: 0.8;
+  }
+
+  .button.submit:hover {
+    scale: 103%;
+  }
+
+  .input-wrapper {
+    position: relative;
+    width: 100%;
+
+
+  }
+
+  .input {
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+  }
+
+  .input::placeholder {
+    color: #a55200;
+  }
+
+  .icon {
+    position: absolute;
+    top: 2.25rem;
+    right: 0.5rem;
+    transform: translateY(-50%);
+    color: #a55200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.input-container {
+  position: relative;
+  height: 4rem;
+  margin-bottom: 0.5rem;
+
+  label {
+    font-size: 0.75rem;
+  }
+}

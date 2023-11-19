@@ -1,0 +1,74 @@
+.loginFormAll {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem auto;
+  max-width: 450px;
+  min-width: 230px;
+
+  &__group {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    transition: flex-direction 1s ease;
+    padding: 1rem;
+  }
+
+
+}
+
+.loginFormAll__group_light {
+  background: #fd7e00;
+}
+
+.loginFormAll__group_dark {
+  background: #c36100;
+}
+
+
+.button.active {
+  background-color: #a57700;
+  color: #101010;
+}
+
+.button {
+  background: #fbd671; /* Исправленный цвет фона */
+  min-width: 7rem;
+  padding: 0 0.25rem;
+  cursor: pointer;
+  margin: 0.25rem auto;
+}
+
+@media (max-width: 850px) {
+  .group {
+    flex-direction: column;
+    animation-name: direction;
+    animation-duration: 0.5s;
+    max-width: 450px;
+
+  }
+  .button {
+    max-width: 450px;
+
+  }
+}
+
+@keyframes direction {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 850px) {
+  .group {
+    flex-direction: column;
+  }
+  .button {
+
+    margin: 0.25rem;
+  }
+}
+

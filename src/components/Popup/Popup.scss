@@ -1,0 +1,25 @@
+.popup {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  background: rgb(139 215 139 / 85%);
+  border-radius: 1rem;
+
+  color: #125012;
+  text-align: center;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+  margin: 0;
+  transform: translateX(-50%);
+  animation-name: opacity;
+  animation-duration: 0.5s;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
