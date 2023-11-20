@@ -2,6 +2,7 @@
   "name": "authform",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://viktechsolutions.github.io/authform/",
   "dependencies": {
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@testing-library/jest-dom": "^5.17.0",
@@ -17,6 +18,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -44,6 +47,7 @@
   },
   "devDependencies": {
     "csscomb": "^4.3.0",
-    "generate-react-cli": "^8.3.0"
+    "generate-react-cli": "^8.3.0",
+    "gh-pages": "^6.1.0"
   }
 }
